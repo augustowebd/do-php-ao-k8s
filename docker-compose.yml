@@ -1,0 +1,20 @@
+version: '3'
+services:
+    web:
+        image: nginx:latest
+        ports:
+            - "8080:80"
+        volumes:
+            - ./system:/system
+            - ./devops/confs/vhost.conf:/etc/nginx/conf.d/default.conf
+        networks:
+            - do-php-ao-k8s
+    php:
+        image: php:fpm
+        volumes:
+            - ./system:/system
+        networks:
+            - do-php-ao-k8s
+networks:
+    do-php-ao-k8s:
+        driver: bridge
