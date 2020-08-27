@@ -1,5 +1,7 @@
 <?php
 
+namespace CotacaoOnline\Entities;
+
 class Produto
 {
     public string $operadora;

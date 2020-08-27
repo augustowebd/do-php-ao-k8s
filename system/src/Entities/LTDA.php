@@ -1,6 +1,7 @@
 <?php
 
+namespace CotacaoOnline\Entities;
+
 class LTDA extends PessoaJuridica
 {
-    protected float $fator = 1.7;
 }

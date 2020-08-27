@@ -1,0 +1,19 @@
+{
+    "name": "augustowebd/contacaoonline",
+    "description": "Sistema de Cotação de Preços de Plano de Saúde",
+    "type": "project",
+    "authors": [
+        {
+            "name": "J. Augusto",
+            "email": "augustowebd@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "CotacaoOnline\\": "src/"
+        }
+    }
+}
